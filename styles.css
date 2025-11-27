@@ -10,15 +10,13 @@
 .square {
   box-sizing: border-box;
   border: 1px solid #ccc;
-}
-
-.square.colored {
-  background-color: #333;
+  background-color: transparent;
+  transition: background-color 0.2s;
 }
 
 #resize-btn {
   display: block;
-  margin: 20px auto;
+  margin: 20px auto 10px;
   padding: 10px 30px;
   font-size: 1rem;
   cursor: pointer;
