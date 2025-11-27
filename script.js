@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const resizeBtn = document.getElementById('resize-btn');
+const colorBtn = document.getElementById('color-btn');
 const blackBtn = document.getElementById('black-btn');
 const eraserBtn = document.getElementById('eraser-btn');
 const statusLabel = document.getElementById('status');
@@ -16,12 +17,13 @@ function updateStatusLabel() {
 
 function setMode(newMode) {
   mode = newMode;
+  colorBtn.classList.toggle('active', mode === 'color');
   blackBtn.classList.toggle('active', mode === 'black');
   eraserBtn.classList.toggle('active', mode === 'eraser');
   resizeBtn.classList.remove('active');
 }
 
-// Mode button listeners
+colorBtn.addEventListener('click', () => setMode('color'));
 blackBtn.addEventListener('click', () => setMode('black'));
 eraserBtn.addEventListener('click', () => setMode('eraser'));
 
