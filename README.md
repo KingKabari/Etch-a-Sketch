@@ -7,22 +7,26 @@ Create pixel art with your mouse by hovering over a dynamic grid—change grid s
 
 ## Features
 
-- Draw by mouse: Hover over squares to color them and leave a trail.
-- Randomized color: Each uncolored square gets a unique random color when first hovered.
-- Progressive darkening: Every time you hover over a colored square, it gets 10% darker, reaching full opacity in 10 passes.
-- Flexible grid resizing: Click the grid size button to choose up to 100 squares per side (the grid auto-resizes to fit).
-- Responsive UI built with HTML, CSS Flexbox, and vanilla JavaScript.
-- Clean, interactive interface inspired by the original Etch-a-Sketch.
+- **Draw by hover:** Mouse over squares to draw (on by default).
+- **Random colors:** Each uncolored square gets a unique random color when you first draw on it.
+- **Progressive darkening:** Hovering repeatedly over a colored square darkens it by 10% each time (up to full color in 10 passes).
+- **Black Only:** Instantly draw in bold black (like a real marker), especially effective with the light board background.
+- **Eraser:** Use eraser mode to clear squares as you hover.
+- **Flexible grid resizing:** Choose up to 100 squares per side with the resize button; board auto-resizes to fit.
+- **Draw/Stop toggle:** Click anywhere on the board to pause or resume drawing—so you can move your cursor and use controls without accidentally drawing.
+- **Status indicator:** Clearly shows whether drawing is active or paused.
+- **Responsive UI:** Built with HTML, CSS Flexbox, and vanilla JavaScript.
 
 ---
 
 ## How to Play
 
 1. Open `index.html` in your browser.
-2. Use your mouse to hover over squares and draw pixel art.
-3. Click the "Change Grid Size" button to choose your grid's dimensions (up to 100x100).
-4. Each square starts blank. First hover assigns a random color; each additional hover on that square makes it 10% darker.
-5. Enjoy creating art, experimenting with colors, or clearing and resizing your sketch pad as desired!
+2. Hover your mouse over grid squares to draw colorful or black marks.
+3. Click "Black Only" for black drawing, or "Eraser" to clear squares.
+4. Click "Change Grid Size" to adjust grid detail up to 100x100.
+5. Click anywhere on the board to toggle between drawing and free movement—watch the status above for feedback!
+6. Experiment with all modes for creative digital sketches.
 
 ---
 
@@ -31,7 +35,7 @@ Create pixel art with your mouse by hovering over a dynamic grid—change grid s
 - `index.html` — Main HTML file with grid container and resize button.
 - `style.css` — CSS layout and styles using Flexbox for the grid and responsive coloring.
 - `script.js` — JavaScript logic for grid generation, coloring, darkening, and control button.
-- `README.md` — Project info (this file!).
+- `README.md` — Documentation (the file you are reading).
 
 ---
 
