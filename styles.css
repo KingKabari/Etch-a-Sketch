@@ -13,3 +13,7 @@
   height: 40px;
   border: 1px solid #ccc;
 }
+
+.square.colored {
+  background-color: #333;
+}
